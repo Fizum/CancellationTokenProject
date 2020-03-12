@@ -7,9 +7,24 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        <Button Content="Start 1" HorizontalAlignment="Left" Height="31" Margin="62,54,0,0" VerticalAlignment="Top" Width="86"/>
-        <Button Content="Start 2" HorizontalAlignment="Left" Height="31" Margin="206,54,0,0" VerticalAlignment="Top" Width="103"/>
-        <Button Content="Start 3" HorizontalAlignment="Left" Height="31" Margin="426,54,0,0" VerticalAlignment="Top" Width="103"/>
+        <Grid.Background>
+            <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                <GradientStop Color="#FF8600FF" Offset="0"/>
+                <GradientStop Color="#FFFFC000" Offset="1"/>
+            </LinearGradientBrush>
+        </Grid.Background>
+        <Button x:Name="Btn_Start1" Content="Start 1" HorizontalAlignment="Left" Height="31" Margin="28,54,0,0" VerticalAlignment="Top" Width="185"/>
+        <Button x:Name="Btn_Start2" Content="Start 2" HorizontalAlignment="Left" Height="31" Margin="327,54,0,0" VerticalAlignment="Top" Width="185"/>
+        <Button x:Name="Btn_Start3" Content="Start 3" HorizontalAlignment="Left" Height="31" Margin="599,54,0,0" VerticalAlignment="Top" Width="185"/>
+        <Label Content="Operazione 1:" HorizontalAlignment="Left" Height="35" Margin="28,107,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="Lbl_Op1" Content="" HorizontalAlignment="Left" Height="35" Margin="119,107,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label Content="Operazione 2:" HorizontalAlignment="Left" Height="35" Margin="327,107,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label Content="Operazione 3:" HorizontalAlignment="Left" Height="35" Margin="599,107,0,0" VerticalAlignment="Top" Width="86"/>
+        <Label x:Name="Lbl_Op1_Copy" Content="" HorizontalAlignment="Left" Height="35" Margin="418,107,0,0" VerticalAlignment="Top" Width="94"/>
+        <Label x:Name="Lbl_Op1_Copy1" Content="" HorizontalAlignment="Left" Height="35" Margin="690,107,0,0" VerticalAlignment="Top" Width="94"/>
+        <TextBox x:Name="Txt_CountOp2" HorizontalAlignment="Left" Height="30" Margin="327,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="Txt_CountOp3" HorizontalAlignment="Left" Height="30" Margin="599,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
+        <TextBox x:Name="Txt_DelayOp3" HorizontalAlignment="Left" Height="30" Margin="698,159,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="86"/>
 
     </Grid>
 </Window>
